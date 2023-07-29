@@ -36,7 +36,7 @@ def get_birthdays_per_week(users):
     for user in users:
           
         birthdate_this_year = date.fromisoformat(user['birthday']).replace(year=current_date.year) # Встановлюємо ДН у поточному році 
-        day_of_week = None
+        # day_of_week = None
            
         if current_date <= birthdate_this_year <= one_week_later: # Перевіряємо чи припадає ДН на сьогодні чи тиждень від сьогодні
            day_of_week = birthdate_this_year.weekday() # Отримуємо день тижня коли буде ДН
